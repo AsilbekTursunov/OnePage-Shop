@@ -16,6 +16,15 @@ document.addEventListener(`DOMContentLoaded`, ()=>{
         navItems.classList.remove('translate')
         menu()
     })
+
+    window.addEventListener('scroll', ()=>{
+        if (document.documentElement.scrollTop > 100) {
+            document.querySelector('header').style.position = 'fixed'
+        }else{
+            document.querySelector('header').style.position = 'relative'
+        }
+    })
+    
 })
 
 
